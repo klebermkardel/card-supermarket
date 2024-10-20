@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <img src="./assets/morango.jpeg" alt="morango">
+        <div class="card-content">
+            <h1>Morango</h1>
+            <h2>Frutas Vermelhas</h2>
+            <span>R$ 5,50</span>
+            <div class="input-items">
+                <button id="subtract" onclick="updateQuantity(this, -1)">-</button>
+                <input type="number" class="quantity" value="0" min="0">
+                <button id="add" onclick="updateQuantity(this, 1)">+</button>
+            </div>
+            <button>Comprar</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./assets/melancia.jpg" alt="melancia">
+        <div class="card-content">
+            <h1>Melancia</h1>
+            <h2>Frutas Refrescantes</h2>
+            <span>R$ 5,99</span>
+            <div class="input-items">
+                <button id="subtract" onclick="updateQuantity(this, -1)">-</button>
+                <input type="number" class="quantity" value="0" min="0">
+                <button id="add" onclick="updateQuantity(this, 1)">+</button>
+            </div>
+            <button>Comprar</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./assets/uva.jpeg" alt="">
+        <div class="card-content">
+            <h1>Uva</h1>
+            <h2>Fonte de Vitaminas</h2>
+            <span>R$ 7,90</span>
+            <div class="input-items">
+                <button id="subtract" onclick="updateQuantity(this, -1)">-</button>
+                <input type="number" class="quantity" value="0" min="0">
+                <button id="add" onclick="updateQuantity(this, 1)">+</button>
+            </div>
+            <button>Comprar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
